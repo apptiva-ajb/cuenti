@@ -1,0 +1,20 @@
+{
+    "cuenti": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cuenti-cuenti-133714-authRole",
+            "UnauthRoleArn": "arn:aws:iam::902603813637:role/amplify-cuenti-cuenti-133714-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::902603813637:role/amplify-cuenti-cuenti-133714-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-cuenti-cuenti-133714-deployment",
+            "UnauthRoleName": "amplify-cuenti-cuenti-133714-unauthRole",
+            "StackName": "amplify-cuenti-cuenti-133714",
+            "StackId": "arn:aws:cloudformation:eu-west-1:902603813637:stack/amplify-cuenti-cuenti-133714/0d7ad6c0-5a27-11ea-bc3c-027abb6c15d2",
+            "AmplifyAppId": "dafnlsxym0pe5"
+        },
+        "categories": {
+            "auth": {
+                "cuentid5956d9f": {}
+            }
+        }
+    }
+}

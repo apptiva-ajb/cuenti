@@ -1,0 +1,31 @@
+type Obra @model {
+  id: ID!
+  nombre: String!
+  fecha: String
+  capitulos: [Capitulo] @connection(name: "ObraCapitulos")
+  personajes: [Personaje] @connection(name: "ObraPersonajes")
+}
+type Personaje @model {
+  id: ID!
+  nombre: String!
+  avatar: String!
+  obra: Obra @connection(name: "ObraPersonajes")
+}
+type Capitulo @model {
+  id: ID!
+  titulo: String!
+  obra: Obra @connection(name: "ObraCapitulos")
+  escenas: [Escena] @connection(name: "CapituloEscenas")
+}
+type Escena @model {
+  id: ID!
+  capitulo: Capitulo @connection(name: "CapituloEscenas")
+  contenidos: [Contenido] @connection(name: "EscenaContenidos")
+}
+type Contenido @model {
+  id: ID!
+  tipo: String!
+  personajeID: String
+  payload: String
+  escena: Escena @connection(name: "EscenaContenidos")
+}
