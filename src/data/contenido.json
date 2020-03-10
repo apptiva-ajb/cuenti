@@ -1,65 +1,151 @@
 {
-  "nombre": "StarWars, el libro",
-    "contenido": [
+  "nombre": "The Rise of Chiquito",
+  "scene": [
     {
-      "id_contenido": 1,
-      "content": "Qué dise usteer ese pedazo de te va a hasé pupitaa",
-      "personaje":"chiquito",
-      "tipo": 1
-    },
+      "background": "https://s.libertaddigital.com/2017/11/11/1920/1080/fit/chiquito-calzada-chistes.jpg",
+      "title": "test",
+      "contenido": [
+        {
+          "id_contenido": 1,
+          "content": "Qué dise usteer ese pedazo de te va a hasé pupitaa",
+          "personaje":"chiquito",
+          "tipo": 1,
+          "color": "red"
+        },
     {
-        "id_contenido": 2,
+      "id_contenido": 2,
         "content": "Ese hombree caballo blanco caballo negroorl ese pedazo de ahorarr",
         "personaje":"Hamlet",
-        "tipo": 1
+        "tipo": 1,
+        "color": "blue"
       },
       {
         "id_contenido": 3,
         "content": "Te voy a borrar el cerito amatomaa",
         "personaje":"chiquito",
-        "tipo": 1
+        "tipo": 1,
+        "color": "red"
       },
       {
         "id_contenido": 4,
         "content": " la cosa muy malar",
         "personaje":"Hamlet",
-        "tipo": 1
+        "tipo": 1,
+        "color": "blue"
       },
       {
         "id_contenido": 5,
         "content": "que la cosa muy malar??",
         "personaje":"chiquito",
-        "tipo": 1
+        "tipo": 1,
+        "color": "red"
       },
       {
         "id_contenido": 6,
         "content": "no te digo trigo por no llamarte Rodrigo",
         "personaje":"chiquito",
-        "tipo": 1
+        "tipo": 1,
+        "color": "red"
       },
       {
         "id_contenido": 7,
         "content": "me cago en tus muelas por la gloria de mi madre",
-        "personaje":"sorin",
-        "tipo": 1
+        "personaje":"Jorge",
+        "tipo": 1,
+        "color": "green"
       },
       {
         "id_contenido": 8,
         "content": "Ahorarr torpedo te voy a borrar el cerito papaar papaar sexuar",
         "personaje":"hamlet",
-        "tipo": 1
+        "tipo": 1,
+        "color": "blue"
       },
       {
         "id_contenido": 9,
         "content": "hasta luego Lucas",
         "personaje":"chiquito",
-        "tipo": 1
+        "tipo": 1,
+        "color": "red"
       },
       {
         "id_contenido": 10,
         "content": "hasta luego Lucas",
         "personaje":"chiquito",
-        "tipo": 1
-      }
-]
+        "tipo": 1,
+        "color": "red"
+      },
+      {
+        "id_contenido": 11,
+        "content": "Qué dise usteer ese pedazo de te va a hasé pupitaa",
+        "personaje":"chiquito",
+        "tipo": 1,
+        "color": "red"
+      },
+  {
+    "id_contenido": 12,
+      "content": "Ese hombree caballo blanco caballo negroorl ese pedazo de ahorarr",
+      "personaje":"Hamlet",
+      "tipo": 1,
+      "color": "blue"
+    },
+    {
+      "id_contenido": 13,
+      "content": "Te voy a borrar el cerito amatomaa",
+      "personaje":"chiquito",
+      "tipo": 1,
+      "color": "red"
+    },
+    {
+      "id_contenido": 14,
+      "content": " la cosa muy malar",
+      "personaje":"Hamlet",
+      "tipo": 1,
+      "color": "blue"
+    },
+    {
+      "id_contenido": 15,
+      "content": "que la cosa muy malar??",
+      "personaje":"chiquito",
+      "tipo": 1,
+      "color": "red"
+    },
+    {
+      "id_contenido": 16,
+      "content": "no te digo trigo por no llamarte Rodrigo",
+      "personaje":"chiquito",
+      "tipo": 1,
+      "color": "red"
+    },
+    {
+      "id_contenido": 17,
+      "content": "me cago en tus muelas por la gloria de mi madre",
+      "personaje":"Jorge",
+      "tipo": 1,
+      "color": "green"
+    },
+    {
+      "id_contenido": 18,
+      "content": "Ahorarr torpedo te voy a borrar el cerito papaar papaar sexuar",
+      "personaje":"hamlet",
+      "tipo": 1,
+      "color": "blue"
+    },
+    {
+      "id_contenido": 19,
+      "content": "hasta luego Lucas",
+      "personaje":"chiquito",
+      "tipo": 1,
+      "color": "red"
+    },
+    {
+      "id_contenido": 20,
+      "content": "hasta luego Lucas",
+      "personaje":"chiquito",
+      "tipo": 1,
+      "color": "red"
+    }
+  ]
+  }
+  ]
 }

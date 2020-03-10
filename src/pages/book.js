@@ -1,36 +1,52 @@
 import React, { Component } from "react"
 import BookHeader from "../components/Book/BookHeader/BookHeader"
 import Contenido from "../components/Book/Contenido/Contenido"
-import NextButton from "../components/Book/NextButton/NextButton"
 import ContenidoPrueba from "../data/contenido.json"
-import './book.css'
+import Background from "../data/images/chiquito.jpg"
+import "./book.css"
 
 export default class book extends Component {
   state = {
-    contador: 0,
-    contenido: "",
+    line: 0,
   }
 
+  componentDidUpdate() {
+      var objDiv = document.getElementsByClassName("contentContainer")[0];
+      objDiv.scrollTop = objDiv.scrollHeight;
+  }
 
-  nextButton = () => {
-    var node = document.createElement("p") // Create a <li> node
-    var textnode = document.createTextNode(
-      ContenidoPrueba.contenido[this.state.contador].content
-    )
-    node.appendChild(textnode)
-    document.getElementById("book").appendChild(node)
-    this.setState({ contador: this.state.contador + 1 })
+  content = () => {
+    let table = []
+    for (let i = 0; i < this.state.line; i++) {
+      table.push(<Contenido payload={ContenidoPrueba.scene[0].contenido[i]} />)
+    }
+    return table
+  }
+
+  addLine = () => {
+    this.setState({ line: this.state.line + 1 })
   }
 
   render() {
-    return (
-      <div>
-        <div id="book">
-          <BookHeader title={ContenidoPrueba.nombre}/>
-        </div>
-        <div className="nextButton">
-        <NextButton nextButton={this.nextButton} />
+    var sectionStyle = {
+      background: "wheat",
+      width: "100%",
+      height: "100vh",
+      // backgroundImage: "url(" + "https://s.libertaddigital.com/2017/11/11/1920/1080/fit/chiquito-calzada-chistes.jpg" + ")",
+      backgroundImage: "url(" + ContenidoPrueba.scene[0].background + ")",
+      // background: "url('../data/images/chiquito.jpg')"
+    }
 
+    return (
+      <div style={sectionStyle}>
+        <div>
+          <BookHeader title={ContenidoPrueba.nombre} />
+        </div>
+        <div className="contentContainer" id="MyDivElement">
+          {this.content()}
+        </div>
+        <div className="nextButtonContainer">
+          <button onClick={this.addLine}>Click</button>
         </div>
       </div>
     )
