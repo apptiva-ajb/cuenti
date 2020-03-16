@@ -620,3 +620,15 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* TEMPORAL CLASSES */
+.story_link_box{
+  width: 7rem;
+  height: 7rem;
+  background-color: #663399;
+}
+.story_link_box{
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}

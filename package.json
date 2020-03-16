@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@aws-amplify/api": "^2.1.6",
+    "@aws-amplify/pubsub": "^2.1.7",
+    "aws-amplify": "^2.2.6",
+    "aws-amplify-react": "^3.1.7",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
@@ -19,6 +23,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.19.1"
   },
   "keywords": [
