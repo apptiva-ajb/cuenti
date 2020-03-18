@@ -4,7 +4,7 @@ type Obra @model {
   fecha: String
   autor: String
   generos: [String]
-  imagen: S3Object
+  imagen: String
   capitulos: [Capitulo] @connection(name: "ObraCapitulos")
   personajes: [Personaje] @connection(name: "ObraPersonajes")
 }
@@ -31,10 +31,4 @@ type Contenido @model {
   personajeID: String
   payload: String
   escena: Escena @connection(name: "EscenaContenidos")
-}
-
-type S3Object {
-  bucket: String!
-  region: String!
-  key: String!
 }

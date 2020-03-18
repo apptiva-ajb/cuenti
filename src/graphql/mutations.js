@@ -12,11 +12,7 @@ export const createObra = /* GraphQL */ `
       fecha
       autor
       generos
-      imagen {
-        bucket
-        region
-        key
-      }
+      imagen
       capitulos {
         items {
           id
@@ -46,11 +42,7 @@ export const updateObra = /* GraphQL */ `
       fecha
       autor
       generos
-      imagen {
-        bucket
-        region
-        key
-      }
+      imagen
       capitulos {
         items {
           id
@@ -80,11 +72,7 @@ export const deleteObra = /* GraphQL */ `
       fecha
       autor
       generos
-      imagen {
-        bucket
-        region
-        key
-      }
+      imagen
       capitulos {
         items {
           id
@@ -118,11 +106,7 @@ export const createPersonaje = /* GraphQL */ `
         fecha
         autor
         generos
-        imagen {
-          bucket
-          region
-          key
-        }
+        imagen
         capitulos {
           nextToken
         }
@@ -148,11 +132,7 @@ export const updatePersonaje = /* GraphQL */ `
         fecha
         autor
         generos
-        imagen {
-          bucket
-          region
-          key
-        }
+        imagen
         capitulos {
           nextToken
         }
@@ -178,11 +158,7 @@ export const deletePersonaje = /* GraphQL */ `
         fecha
         autor
         generos
-        imagen {
-          bucket
-          region
-          key
-        }
+        imagen
         capitulos {
           nextToken
         }
@@ -207,11 +183,7 @@ export const createCapitulo = /* GraphQL */ `
         fecha
         autor
         generos
-        imagen {
-          bucket
-          region
-          key
-        }
+        imagen
         capitulos {
           nextToken
         }
@@ -242,11 +214,7 @@ export const updateCapitulo = /* GraphQL */ `
         fecha
         autor
         generos
-        imagen {
-          bucket
-          region
-          key
-        }
+        imagen
         capitulos {
           nextToken
         }
@@ -277,11 +245,7 @@ export const deleteCapitulo = /* GraphQL */ `
         fecha
         autor
         generos
-        imagen {
-          bucket
-          region
-          key
-        }
+        imagen
         capitulos {
           nextToken
         }
@@ -314,6 +278,7 @@ export const createEscena = /* GraphQL */ `
           fecha
           autor
           generos
+          imagen
         }
         escenas {
           nextToken
@@ -347,6 +312,7 @@ export const updateEscena = /* GraphQL */ `
           fecha
           autor
           generos
+          imagen
         }
         escenas {
           nextToken
@@ -380,6 +346,7 @@ export const deleteEscena = /* GraphQL */ `
           fecha
           autor
           generos
+          imagen
         }
         escenas {
           nextToken
