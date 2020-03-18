@@ -7,6 +7,13 @@ export const onCreateObra = /* GraphQL */ `
       id
       nombre
       fecha
+      autor
+      generos
+      imagen {
+        bucket
+        region
+        key
+      }
       capitulos {
         items {
           id
@@ -31,6 +38,13 @@ export const onUpdateObra = /* GraphQL */ `
       id
       nombre
       fecha
+      autor
+      generos
+      imagen {
+        bucket
+        region
+        key
+      }
       capitulos {
         items {
           id
@@ -55,6 +69,13 @@ export const onDeleteObra = /* GraphQL */ `
       id
       nombre
       fecha
+      autor
+      generos
+      imagen {
+        bucket
+        region
+        key
+      }
       capitulos {
         items {
           id
@@ -83,6 +104,13 @@ export const onCreatePersonaje = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -103,6 +131,13 @@ export const onUpdatePersonaje = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -123,6 +158,13 @@ export const onDeletePersonaje = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -142,6 +184,13 @@ export const onCreateCapitulo = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -167,6 +216,13 @@ export const onUpdateCapitulo = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -192,6 +248,13 @@ export const onDeleteCapitulo = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -219,6 +282,8 @@ export const onCreateEscena = /* GraphQL */ `
           id
           nombre
           fecha
+          autor
+          generos
         }
         escenas {
           nextToken
@@ -247,6 +312,8 @@ export const onUpdateEscena = /* GraphQL */ `
           id
           nombre
           fecha
+          autor
+          generos
         }
         escenas {
           nextToken
@@ -275,6 +342,8 @@ export const onDeleteEscena = /* GraphQL */ `
           id
           nombre
           fecha
+          autor
+          generos
         }
         escenas {
           nextToken

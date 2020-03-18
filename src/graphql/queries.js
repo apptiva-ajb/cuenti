@@ -7,6 +7,13 @@ export const getObra = /* GraphQL */ `
       id
       nombre
       fecha
+      autor
+      generos
+      imagen {
+        bucket
+        region
+        key
+      }
       capitulos {
         items {
           id
@@ -36,6 +43,13 @@ export const listObras = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -57,6 +71,13 @@ export const getPersonaje = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -82,6 +103,8 @@ export const listPersonajes = /* GraphQL */ `
           id
           nombre
           fecha
+          autor
+          generos
         }
       }
       nextToken
@@ -97,6 +120,13 @@ export const getCapitulo = /* GraphQL */ `
         id
         nombre
         fecha
+        autor
+        generos
+        imagen {
+          bucket
+          region
+          key
+        }
         capitulos {
           nextToken
         }
@@ -127,6 +157,8 @@ export const listCapitulos = /* GraphQL */ `
           id
           nombre
           fecha
+          autor
+          generos
         }
         escenas {
           nextToken
@@ -147,6 +179,8 @@ export const getEscena = /* GraphQL */ `
           id
           nombre
           fecha
+          autor
+          generos
         }
         escenas {
           nextToken

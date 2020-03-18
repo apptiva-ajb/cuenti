@@ -1,6 +1,6 @@
 {
     "identityPoolName": "cuentid5956d9f_identitypool_d5956d9f",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "cuentid5956d9f",
     "userPoolName": "cuentid5956d9f_userpool_d5956d9f",
     "autoVerifiedAttributes": [
