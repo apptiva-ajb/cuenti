@@ -1,17 +1,20 @@
-.flex_row{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
-.flex_column{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.story_div_img{
-    width: 50%;
-    margin-right: 1rem;
+.story_div_img {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+.genero {
+  margin-right: 1rem;
 }
