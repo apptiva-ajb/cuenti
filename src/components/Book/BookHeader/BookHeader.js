@@ -6,7 +6,7 @@ export default class BookHeader extends Component {
     return (
         <div className="bookHeader">
           <h1>{this.props.title}</h1>
-          <h2>Escena</h2>
+          <h2>Acto / Escena</h2>
         </div>
     )
   }

@@ -1,0 +1,36 @@
+.contenidoContainer {
+    display: table;
+    padding: 5px 20px 5px 5px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    position: relative;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.contenidoContainer:after {
+  content: ' ';
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+  border: 10px solid;
+  border-color: red transparent transparent red;
+}
+
+.contenido {
+    display: flex;
+}
+
+.contenido img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.contenido .contenidoText {
+    margin-left: 10px;
+}
+
+.contenido .contenidoText p{
+    margin-bottom: 0px;
+}
